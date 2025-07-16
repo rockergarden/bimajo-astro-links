@@ -1,0 +1,23 @@
+---
+import Avatar from "../components/Avatar";
+import Description from "../components/Description";
+import SocialLinks from "../components/SocialLinks";
+import LinkList from "../components/LinkList";
+import logo from "../assets/logo.jpg";
+---
+
+<html lang="es">
+  <head>
+    <title>RockerGarden | Linktree Clone</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <main style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+      <Avatar src={logo.src} alt="Logo RockerGarden" client:load />
+      <Description client:load />
+      <SocialLinks client:load />
+      <hr style="width: 80%; margin: 24px 0;" />
+      <LinkList client:load />
+    </main>
+  </body>
+</html>
